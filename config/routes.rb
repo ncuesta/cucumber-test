@@ -1,4 +1,9 @@
 CucumberTest::Application.routes.draw do
+  get "custom/default"
+  root :to => 'custom#default'
+
+  get ':section' => 'section#cover'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
