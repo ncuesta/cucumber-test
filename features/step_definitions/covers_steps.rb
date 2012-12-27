@@ -1,6 +1,7 @@
 ##
 # Selectors
 ##
+
 COVER_SELECTOR = '.cover'
 
 ##
