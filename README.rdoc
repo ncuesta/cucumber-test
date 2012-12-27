@@ -1,3 +1,9 @@
 == cucumber-test
 
 {<img src="https://travis-ci.org/ncuesta/cucumber-test.png" />}[https://travis-ci.org/ncuesta/cucumber-test]
+
+Test with
+
+    rake cucumber
+
+Or see (build results on Travis CI)[https://travis-ci.org/ncuesta/cucumber-test].
