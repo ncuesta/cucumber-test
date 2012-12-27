@@ -1,4 +1,14 @@
 <div class="cover default">
   <a class="ad" href="http://affiliate-site.com">This is an ad</a>
   <h1>Default</h1>
+
+  <ul class="articles-container">
+    <% 1.upto(5) do |index| %>
+    <li class="article">
+      <a class="title" href="#article-<%= index %>">Article <%= index %></a>
+      <span class="description">Article <%= index %></span>
+    </li>
+    <% end %>
+  </ul>
+
 </div>
