@@ -20,6 +20,7 @@ group :assets do
 end
 
 group :test do
+  gem 'rake'
   gem 'rspec'
   gem 'cucumber-rails', :require => false
   # gem 'database_cleaner'

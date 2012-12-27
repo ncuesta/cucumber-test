@@ -171,6 +171,7 @@ DEPENDENCIES
   journey!
   jquery-rails
   rails!
+  rake
   rspec
   sass-rails!
   sqlite3
