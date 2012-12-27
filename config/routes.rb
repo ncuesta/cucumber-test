@@ -1,5 +1,8 @@
 CucumberTest::Application.routes.draw do
-  get "custom/default"
+  get 'custom/default'
+
+  get 'article/:slug' => 'article#show'
+
   root :to => 'custom#default'
 
   get ':section' => 'section#cover'

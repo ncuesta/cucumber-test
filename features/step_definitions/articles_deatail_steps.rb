@@ -8,8 +8,8 @@ TITLE_SELECTOR          = ARTICLE_LAYOUT_SELECTOR + ' .title'
 LEAD_SELECTOR           = ARTICLE_LAYOUT_SELECTOR + ' .lead'
 BODY_SELECTOR           = ARTICLE_LAYOUT_SELECTOR + ' .body'
 BYLINE_SELECTOR         = ARTICLE_LAYOUT_SELECTOR + ' .byline'
-BIG_GALLERY_SELECTOR    = ARTICLE_LAYOUT_SELECTOR + ' .big_gallery'
-BIG_IMAGE_SELECTOR      = ARTICLE_LAYOUT_SELECTOR + ' .big_image'
+BIG_GALLERY_SELECTOR    = ARTICLE_LAYOUT_SELECTOR + ' .big-gallery'
+BIG_IMAGE_SELECTOR      = ARTICLE_LAYOUT_SELECTOR + ' .big-image'
 
 
 ##
@@ -57,9 +57,9 @@ Then /^I won't see the article's byline$/ do
 end
 
 Then /^I will see the article's big gallery$/ do
-  page.should_not have_css BIG_GALLERY_SELECTOR
+  page.should have_css BIG_GALLERY_SELECTOR
 end
 
 Then /^I will see the article's big image$/ do
-  page.should_not have_css BIG_IMAGE_SELECTOR
+  page.should have_css BIG_IMAGE_SELECTOR
 end

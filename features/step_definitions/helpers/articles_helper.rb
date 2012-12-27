@@ -22,7 +22,7 @@ module CucumberHelpers
     end
 
     def self.sanitize(attributes = [])
-      return ['full'] if attributes.include?(:full)
+      return VALID_ATTRIBUTES if attributes.include?(:full)
 
       (attributes + [:title]) & VALID_ATTRIBUTES
     end
