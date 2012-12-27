@@ -1,17 +1,28 @@
-When "I visit the homepage" do
-  visit('/')
+##
+# Selectors
+##
+COVER_SELECTOR = '.cover'
+
+##
+# Utility methods
+##
+
+# Returns whether the page is a cover
+def be_cover
+  have_css COVER_SELECTOR
 end
+
+##
+# Steps definitions
+##
 
 Then "I will see the homepage cover" do
-  page.should have_css '.cover'
-end
-
-When /^I visit section "(.*)" at "(.*)"$/ do |section, url|
-  @url = url.gsub(/^\//, '')
-  visit(url)
+  page.should be_cover
 end
 
 Then /^I will see the cover for "(.*)"$/ do |section|
-  page.should have_css '.cover'
-  page.should have_css '.' + @url
+  section_selector = '.' + section.parameterize
+
+  page.should be_cover
+  page.should have_css section_selector
 end

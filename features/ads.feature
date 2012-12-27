@@ -3,30 +3,20 @@ Feature: Site-wide ads
   Visitors should be able to
   see ads at most site pages
 
-
   Scenario: Ads are visible on the homepage
     Given I am a visitor
      When I visit the homepage
      Then I will see ads
 
-
   Scenario Outline: Ads are visible on generic covers
     Given I am a visitor
-     When I visit section "<a_section>" at "<url>"
+     When I visit section "<a_section>"
      Then I will see ads
-
   Examples:
-    | a_section    | url                  |
-    | El Mundo     | /el-mundo            |
-    | El País      | /el-pais             |
-    | La Ciudad    | /la-ciudad           |
-    | La Provincia | /la-provincia        |
-    | Inf. General | /informacion-general |
-    | Opinión      | /opinion             |
-    | Policiales   | /policiales          |
-    | Deportes     | /deportes            |
-    | Espectáculos | /espectaculos        |
-
+    | a_section    |
+    | El Mundo     |
+    | La Ciudad    |
+    | Espectáculos |
 
   Scenario: Ads should take the visitor to an affiliate page
     Given I am a visitor

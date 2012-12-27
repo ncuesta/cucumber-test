@@ -1,3 +1,7 @@
+##
+# Steps definitions
+##
+
 When "I click on an ad" do
   @current_url = page.current_url
   click_on 'ad'

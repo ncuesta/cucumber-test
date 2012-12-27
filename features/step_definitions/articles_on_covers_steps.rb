@@ -1,3 +1,7 @@
+##
+# Steps definitions
+##
+
 Then "I will see an article" do
   page.should have_css '.article'
 end
