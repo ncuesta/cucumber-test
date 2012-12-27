@@ -6,4 +6,4 @@ Test with
 
     rake cucumber
 
-Or see (build results on Travis CI)[https://travis-ci.org/ncuesta/cucumber-test].
+Or see {build results on Travis CI}[https://travis-ci.org/ncuesta/cucumber-test].
